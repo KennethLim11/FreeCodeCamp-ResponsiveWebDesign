@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="survey-form.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This survey will see what skills people in the tech industry would want to learn. Thank you for taking the time to answer this survey!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter your name: <input id="name" type="text" placeholder="Juan Dela Cruz" required></label>
+        <label id="email-label">Enter your email: <input id="email" type="email" placeholder="Email should be more than 5 characters" required></label>
+        <label id="number-label">Enter a number: <input id="number" type="number" min="15" max="100" placeholder="pick between 15 to 100"></label>
+      </fieldset>
+      <fieldset>
+        <label for="referrer">What is your favorite programming language?
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Python</option>
+            <option value="2">Javascript</option>
+            <option value="3">C++</option>
+            <option value="4">C#</option>
+            <option value="5">Java</option>
+            <option value="6">Kotlin</option>
+            <option value="7">Swift</option>
+            <option value="8">Ruby</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>What is your level of proficiency in programming?</label>
+        <label><input class="inline" type="radio" name="proficiency" value="1"> Beginner</label>
+        <label><input class="inline" type="radio" name="proficiency" value="1"> Intermediate</label>
+        <label><input class="inline" type="radio" name="proficiency" value="1"> Advanced</label>
+        <label><input class="inline" type="radio" name="proficiency" value="1"> Professional</label>
+      </fieldset>   
+      <fieldset>
+        <label>What field/s would you like to learn and develop in?</label>
+        <label><input class="inline" type="checkbox" value="1">Front-End Development</label> 
+        <label><input class="inline" type="checkbox" value="2">Back-End Development</label> 
+        <label><input class="inline" type="checkbox" value="3">Data Analytics</label> 
+        <label><input class="inline" type="checkbox" value="4">Embedded Programming</label> 
+        <label><input class="inline" type="checkbox" value="5">Game Development</label> 
+        <label><input class="inline" type="checkbox" value="6">Software Development</label> 
+        <label><input class="inline" type="checkbox" value="7">Mobile Application Development</label> 
+        <label><input class="inline" type="checkbox" value="8">Networking</label> 
+      </fieldset>
+      <fieldset>
+        <label>Any comments you would want to say? 
+          <textarea></textarea>
+      </fieldset>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
