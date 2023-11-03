@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: pink;
+    color: white;
+}
+
+/* header styles */
+#header {
+    min-height: 60px;
+    width: 100%;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+#navbar ul {
+    flex: 1;
+    text-align: right;
+}
+
+#navbar ul li {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+#navbar ul li a, #navbar a {
+    text-decoration: none;
+    color: white;
+    transition: 0.6s;
+}
+
+#navbar ul li a:hover {
+    color: #C75000;
+}
+
+#navbar a:hover {
+    color: #C75000;
+}
+
+/* welcome-section styles */
+#welcome-section {
+    /*background: linear-gradient(45deg, #C75000, #945600, #A32E00, #945600, #C75000);*/
+    background: linear-gradient(180deg, #290E00, #7A2300);
+    height: 100vh;
+    /*border-bottom: 5px solid black;*/
+}
+
+.welcome-text {
+    padding-top: 50vh;
+    text-align: center;
+    font-size: 40px;
+}
+
+.welcome-text p {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+/* welcome-section styles */
+#projects {
+    /*background: linear-gradient(180deg, #7A2300 20%, #B83400, #FF6D33);*/
+    background: linear-gradient(0deg,#C75000, #945600, #7A2300);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: calc(100vh - 200px);
+    margin: auto;
+}
+
+#projects h1, #projects h2 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#projects h1 {
+    font-size: 45px;
+}
+
+.row {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project-tile {
+    flex-basis: 45%;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 30px 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: 0.6s;
+}
+
+.project-tile:hover {
+    /*background: linear-gradient(45deg, black, gray);*/
+    background-color: #3D1100;
+    border-color: white;  
+}
+
+
+.project-tile a {
+    color: white;
+    text-decoration: none;
+}
+
+#projects h2 a i{
+    color: black;
+    transition: 0.5s;
+}
+
+#projects h2 a i:hover {
+    transform: translateY(-15px);
+    font-size: 28px;
+}
+
+#projects h2 a i::before {
+    padding-right: 3px;
+}
+
+/* contact-section styles */
+#contact-section {
+    background-color: #000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: auto;
+    margin: auto;
+}
+
+.contact-text {
+    text-align: center;
+    font-size: 20px;
+}
+
+.contact-text h1 {
+    margin: 30px;
+}
+
+.contact-text a i{
+    padding: 25px 25px;
+    color: white;
+    transition: 0.5s ease-out;
+}
+
+.fa-facebook-square:hover {
+    transform: translateY(-15px);
+    font-size: 23px;
+    color: #C75000;
+}
+
+.fa-phone-square:hover {
+    transform: translateY(-15px);
+    font-size: 23px;
+    color: #C75000;
+}
+
+.fa-github-square:hover {
+    transform: translateY(-15px);
+    font-size: 23px;
+    color: #C75000;
+}
+
+.fa-linkedin-square:hover {
+    transform: translateY(-15px);
+    font-size: 23px;
+    color: #C75000;
+}
+
+.fa-google:hover {
+    transform: translateY(-15px);
+    font-size: 23px;
+    color: #C75000;
+}
+
+.contact-text a i::before {
+    padding-right: 5px;
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+    #projects {
+        height: auto;
+    }
+    .project-tile {
+        width: 50%;
+    }
+}
